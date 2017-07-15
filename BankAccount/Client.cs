@@ -24,12 +24,7 @@ namespace BankAccount
 
         }
 
-        //public Client()
-        //{
-
-        //}
-
-        //Methods
+        //Method
         public virtual string GetClientInfo()
         {
             return "Name: " + name + "\nSSN: " + ssn + "\nLocation: " + location;

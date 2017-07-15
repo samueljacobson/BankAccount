@@ -8,10 +8,7 @@ namespace BankAccount
 {
     abstract class Account
     {
-        //protected int accountNumber;
-        //protected double balance;
-        //protected string accountType;
-
+        //Abstract methods
         public abstract void GetBalance();
         public abstract void Deposit();
         public abstract void Withdraw();

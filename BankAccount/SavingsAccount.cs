@@ -8,21 +8,26 @@ namespace BankAccount
 {
     class SavingsAccount : Account
     {
+        //Fields - hard-coded
         protected int accountNumber = 189007;
         protected double balance = 25000.00d;
         protected string accountType = "Savings";
 
+        //Fields - based on user input
         private double deposit;
         private double withdrawal;
         private double minBalance = 1000d;
 
+        //Property
         public double MinBalance { get; }
 
+        //Constructor
         public SavingsAccount()
         {
 
         }
 
+        //Methods (inherited from the abstract class)
         public override void GetBalance()
         {
             Console.WriteLine("Your current savings account balance is: $" + balance);
